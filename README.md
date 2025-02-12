@@ -20,3 +20,27 @@ Microservices are ideal for large, complex applications that need high availabil
 
 # An example of Microservices in web dev.
 ![image](https://www.simform.com/wp-content/uploads/2023/12/Monolthic-vs.-Microservices-Architecture.png)
+
+Microservices in ecommerce websites
+Imagine you're building an e-commerce website using microservices instead of a monolithic architecture. Instead of one big system, you break it into separate, independent services:
+1. User Service
+- Manages user authentication, profiles, and account details.
+- Uses JWT tokens or OAuth for security.
+2. Product Service
+- Handles product listings, descriptions, and prices.
+- Uses a database like MongoDB or PostgreSQL.
+3. Cart Service
+- Manages shopping carts for users.
+- Stores data in Redis for fast access.
+4. Order Service
+- Processes customer orders and payments.
+- Connects to third-party payment gateways such as Stripe or PayPal.
+5. Notification Service
+- Sends emails, SMS, or push notifications about orders and promotions.
+- Uses Kafka or RabbitMQ for event-driven messaging.
+6. API Gateway (Optional)
+- Acts as a single entry point for frontend requests.
+- Routes API calls to the appropriate microservice.
+- How They Communicate
+- Services talk to each other using REST APIs, GraphQL, or gRPC.
+- They use message brokers such as RabbitMQ or Kafka for asynchronous communication.
